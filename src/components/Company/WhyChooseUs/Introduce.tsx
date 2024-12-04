@@ -33,7 +33,7 @@ const Introduce: React.FC = () => {
                     <h1 className="text-4xl font-bold text-white">Introduce Our Projects</h1>
                 </div>
                 <div>
-                    <span className="mt-2 w-50 text-gray-600">We’ve excelled in a wide range of industries</span>
+                    <span className="mt-2 w-50 text-gray-600">We are excelled in a wide range of industries</span>
                     <p className="mt-2 w-50 text-gray-600">bringing valuable insights to our customers.</p>
                 </div>
                 <a href="#" className="text-blue-500 hover:underline">

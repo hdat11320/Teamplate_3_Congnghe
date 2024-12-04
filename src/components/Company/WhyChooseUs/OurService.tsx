@@ -55,7 +55,7 @@ export default function OurService() {
             <div className="relative p-8 bg-white group-hover:translate-x-full transition-transform duration-300">
               <FontAwesomeIcon icon={faLightbulb} className="text-4xl text-purple-700 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Dedicated Team</h3>
-              <p>Over the past decade, our customers succeeded by leveraging Intellectsoft’s process of building, motivating.</p>
+              <p>Over the past decade, our customers succeeded by leveraging Intellectsoft is process of building, motivating.</p>
             </div>
           </div>
         </div>
