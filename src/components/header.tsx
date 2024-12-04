@@ -12,9 +12,9 @@ import BackToTopButton from "./backtotop";
 export default function Header() {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
 
-    const toggleSearch = () => {
-        setIsSearchVisible(!isSearchVisible);
-    };
+    // const toggleSearch = () => {
+    //     setIsSearchVisible(!isSearchVisible);
+    // };
     return (
 
         <header id='site-header' className="site-header sticky top-0 z-50">

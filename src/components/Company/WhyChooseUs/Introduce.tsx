@@ -21,12 +21,12 @@ const Introduce: React.FC = () => {
       };
     }, []);
   
-    const handleDotClick = (index: number) => {
-      setActiveIndex(index);
-    };
+    // const handleDotClick = (index: number) => {
+    //   setActiveIndex(index);
+    // };
     return (
         <div className="relative footer-v2">
-            <h5 className="text-purple-700 text-sm  font-semibold mb-4 mx-auto container"> // LASTEST CASE STUDIES</h5>
+            <h5 className="text-purple-700 text-sm  font-semibold mb-4 mx-auto container">  LASTEST CASE STUDIES</h5>
             {/* Title Section */}
             <div className="container flex justify-between items-center mb-4 py-6 mx-auto">
                 <div>

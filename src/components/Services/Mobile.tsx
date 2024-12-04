@@ -4,12 +4,12 @@ import React from 'react';
 
 
 const MobileDevelopment: React.FC = () => {
-    const counterData = [
-        { number: 330, label: 'active Clients' },
-        { number: 850, label: 'projects done' },
-        { number: 25, label: 'team advisors' },
-        { number: 10, label: 'Glorious Years' },
-    ];
+    // const counterData = [
+    //     { number: 330, label: 'active Clients' },
+    //     { number: 850, label: 'projects done' },
+    //     { number: 25, label: 'team advisors' },
+    //     { number: 10, label: 'Glorious Years' },
+    // ];
     
     const industriesData = [
         { title: 'Business & Finance', description: 'The global economy is moving towards a new identity. In order to remain competitive and profitable, the banking and finance.', image: '../../images/b-image.png' },

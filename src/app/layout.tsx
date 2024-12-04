@@ -37,10 +37,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* <script
           src="https://kit.fontawesome.com/bcdf405993.js"
           crossOrigin="anonymous"
-        ></script>
+        ></script> */}
         <meta name="description" content="Engitech" />
         <meta name="keywords" content="Engitech" />
         <meta property="og:title" content="Engitech" />
