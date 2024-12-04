@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {  faEnvelope, faSearch, faShoppingBag, faClock, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import { useState } from "react";
+// import { useState } from "react";git 
 import Link from 'next/link';
 import BackToTopButton from "./backtotop";
 
 export default function Header() {
-    const [isSearchVisible, setIsSearchVisible] = useState(false);
+    // const [isSearchVisible, setIsSearchVisible] = useState(false);
 
     // const toggleSearch = () => {
     //     setIsSearchVisible(!isSearchVisible);
