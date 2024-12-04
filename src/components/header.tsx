@@ -10,7 +10,7 @@ import Link from 'next/link';
 import BackToTopButton from "./backtotop";
 
 export default function Header() {
-    // const [isSearchVisible, setIsSearchVisible] = useState(false);
+    
 
     // const toggleSearch = () => {
     //     setIsSearchVisible(!isSearchVisible);
