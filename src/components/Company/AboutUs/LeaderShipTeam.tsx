@@ -7,7 +7,7 @@ const LeadershipTeam = () => {
     <div className="bg-white py-16 px-4">
       <div className="container mx-auto">
         {/* Section Title */}
-        <h4 className="text-purple-800 font-bold text-center text-sm"> // OUR TEAM</h4>
+        <h4 className="text-purple-800 font-bold text-center text-sm">  OUR TEAM</h4>
         <h2 className="text-3xl text-center mt-2 font-extrabold">Our Leadership Team</h2>
         <p className="text-gray-600 text-center mt-4 max-w-2xl mx-auto">
           We help businesses elevate their value through custom software development, product design, QA, and consultancy services.

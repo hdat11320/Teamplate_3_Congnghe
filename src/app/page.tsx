@@ -2,8 +2,8 @@ import BackToTopButton from "@/components/backtotop";
 import Footer from "@/components/footer";
 
 import Home1 from "@/components/Home/home";
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faBagShopping, faClock, faEnvelope, faPhoneFlip, faSearch, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+
+import { faBagShopping, faPhoneFlip, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Image from "next/image";

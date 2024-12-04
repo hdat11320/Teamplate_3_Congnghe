@@ -182,7 +182,7 @@ const MobileDevelopment: React.FC = () => {
         <div className="flex flex-wrap mb-8">
             <div className="w-full md:w-5/12">
                 <div className="ot-heading mb-0">
-                    <span className="text-gray-500">// latest case studies</span>
+                    <span className="text-gray-500"> latest case studies</span>
                     <h2 className="text-2xl font-bold">Introduce Our Projects</h2>
                 </div>
             </div>
@@ -342,7 +342,7 @@ const MobileDevelopment: React.FC = () => {
 
         <div className="text-center pt-20 mb-8">
             <div className="ot-heading">
-                <span className="text-gray-500">// BUSINESS INDUSTRIES</span>
+                <span className="text-gray-500"> BUSINESS INDUSTRIES</span>
                 <h2 className="main-heading text-4xl ">Business Industries <br />What We Serve</h2>
             </div>
         </div>

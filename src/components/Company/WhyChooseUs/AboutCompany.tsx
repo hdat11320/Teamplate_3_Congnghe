@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faMedal, faCog, faAward } from "@fortawesome/free-solid-svg-icons"
+import {  faCog, faAward } from "@fortawesome/free-solid-svg-icons"
 export default function AboutCompany() {
   return (
     <section className="py-16">
@@ -21,7 +21,7 @@ export default function AboutCompany() {
           {/* Right Section: Text and Info */}
           <div className="lg:w-1/2 w-full">
             {/* About Company Text */}
-            <h5 className="text-purple-700 text-sm font-semibold mb-4"> // ABOUT COMPANY</h5>
+            <h5 className="text-purple-700 text-sm font-semibold mb-4">  ABOUT COMPANY</h5>
             <h2 className="text-4xl font-bold mb-6">Your Partner for Software Innovation</h2>
             <p className="text-gray-600 mb-8">
               Engitech is the partner of choice for many of the worlds leading enterprises, SMEs, and technology challengers.

@@ -1,12 +1,12 @@
 // components/TechnologyIndex.js
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faMobileAlt, faCloud, faDatabase, faRobot, faMicrochip, faTelevision, faStopwatch } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faMobileAlt, faCloud, faDatabase,  faTelevision, faStopwatch } from '@fortawesome/free-solid-svg-icons';
 
 export default function TechnologyIndex() {
   return (
     <div className="relative bg-cover bg-center py-5" style={{ backgroundImage: 'url(/images/background/bg-tech-home1.jpg)' }}>
       <div className="container mx-auto text-center text-white pt-20 pb-24">
-        <h3 className="text-white text-sm leading-tight">// TECHNOLOGY INDEX</h3>
+        <h3 className="text-white text-sm leading-tight"> TECHNOLOGY INDEX</h3>
         <h2 className="text-5xl font-sans font-bold mb-2 text-white">We Deliver Solution with the Goal of Trusting Relationships</h2>
         <div className=" justify-center grid-cols-1 md:grid-cols-6 grid">
           {/* Box 1 */}

@@ -6,7 +6,7 @@ export default function OurService() {
   return (
     <div className="py-16 bg-gray-50">
       <div className="container mx-auto text-center">
-      <h5 className="text-purple-700 text-sm font-semibold mb-4"> // OUR SERVICE</h5>
+      <h5 className="text-purple-700 text-sm font-semibold mb-4">  OUR SERVICE</h5>
         <h2 className="text-3xl font-bold mb-8">We Offer a Wide
         Variety of IT Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

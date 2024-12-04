@@ -1,12 +1,12 @@
 "use client"
-import { useState } from 'react';
+// import { useState } from 'react';
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faSearch} from '@fortawesome/free-solid-svg-icons';
 
 const ProductDetail = () => {
-  const [quantity, setQuantity] = useState(1);
+  // const [quantity, setQuantity] = useState(1);
 
   return (
     <section className="container mx-auto py-16">

@@ -3,7 +3,7 @@ export default function ClientTestimonials() {
     return (
       <div className="py-16 bg-gray-100">
         <div className="container mx-auto ">
-          <h5 className="text-purple-800 text-sm"> // OUR CLIENTS</h5>
+          <h5 className="text-purple-800 text-sm">  OUR CLIENTS</h5>
           <h2 className="text-3xl font-extrabold mb-2">We are Trusted 15+ Countries Worldwide</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
             <div className="bg-white shadow-md rounded-lg p-6">

@@ -5,7 +5,7 @@ export default function LeadershipTeam() {
   return (
     <div className="py-16 bg-gray-100">
       <div className="container mx-auto text-center">
-        <h5 className="text-purple-800 text-sm"> // OUR TEAM</h5>
+        <h5 className="text-purple-800 text-sm">  OUR TEAM</h5>
         <h2 className="text-4xl font-extrabold mb-2">Our Leadership Team</h2>
         <p className=" m-6 text-xm px-6">
           We help businesses elevate their value through custom software development, <br />

@@ -23,7 +23,7 @@ return (
     <div className="container mx-auto">
         <div className="text-center mb-8">
             <div className="ot-heading">
-                <span className="text-gray-600">// latest case studies</span>
+                <span className="text-gray-600"> latest case studies</span>
                 <h2 className="main-heading text-4xl ">Introduce Our Projects</h2>
             </div>
             <div className="my-5"></div>

@@ -7,7 +7,7 @@ const WhatWeOffer = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left content */}
         <div className="flex flex-col justify-center">
-          <h4 className="text-purple-600 font-bold"> // WHAT WE OFFER</h4>
+          <h4 className="text-purple-600 font-bold">  WHAT WE OFFER</h4>
           <h1 className="text-3xl font-bold mt-4">Your Partner for Software Innovation</h1>
           <p className="text-gray-600 mt-6">
             Engitech is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.

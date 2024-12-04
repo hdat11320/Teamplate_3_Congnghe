@@ -10,7 +10,7 @@ export default function RecentNews() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-between mb-6">
           <div className="">
-            <h5 className="text-purple-800 font-bold mb-2 text-sm uppercase"> // Ours recent news</h5>
+            <h5 className="text-purple-800 font-bold mb-2 text-sm uppercase">  Ours recent news</h5>
             <h3 className="text-3xl">Read Our Latest News</h3>
           </div>
           <button className="mb-6 px-3 py-4 bg-sky-400 text-white hover:bg-purple-600 w-1/3 font-bold uppercase text-sm md:ml-auto">

@@ -19,7 +19,7 @@ const WhatWeDo = () => {
 
         {/* Right Content Section */}
         <div className="flex flex-col justify-center">
-          <h5 className="text-purple-400 font-bold text-sm"> // EXPERIENCE. EXECUTION. EXCELLENCE.</h5>
+          <h5 className="text-purple-400 font-bold text-sm">  EXPERIENCE. EXECUTION. EXCELLENCE.</h5>
           <h1 className="text-3xl font-bold text-white">What We Actually Do</h1>
 
           <div className="flex space-x-6 mt-8">

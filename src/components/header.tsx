@@ -3,7 +3,7 @@ import "../../public/css/style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import logo from "../public/images/logo.svg"
 import { faTwitter, faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faBagShopping, faEnvelope, faMagnifyingGlass, faPhone, faX, faSearch, faShoppingBag, faClock, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
+import {  faEnvelope, faSearch, faShoppingBag, faClock, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import { useState } from "react";
 import Link from 'next/link';

@@ -18,7 +18,7 @@ export default  function Faq(){
     <div className="container mx-auto">
         <div className="text-center mb-8">
             <div className="ot-heading">
-                <span className="text-gray-500">// FAQ</span>
+                <span className="text-gray-500"> FAQ</span>
                 <h2 className="main-heading text-3xl font-bold">Read Most <br />Frequent Questions</h2>
             </div>
             <div className="mb-6"></div>
@@ -164,8 +164,8 @@ export default  function Faq(){
             <div className="flex flex-wrap">
                 <div className="w-full md:w-2/3 mb-4 md:mb-0">
                     <div className="ot-heading">
-                        <span className="text-gray-500">// We Carry more Than Just Good Coding Skills</span>
-                        <h2 className="main-heading text-4xl ">Let's Build Your Website!</h2>
+                        <span className="text-gray-500"> We Carry more Than Just Good Coding Skills</span>
+                        <h2 className="main-heading text-4xl ">Let`s Build Your Website!</h2>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3 p flex justify-end">
@@ -182,7 +182,7 @@ export default  function Faq(){
             <div className="space-120"></div>
             <div className="text-center mb-8">
                 <div className="ot-heading">
-                    <span className="text-gray-500">// support center</span>
+                    <span className="text-gray-500"> support center</span>
                     <h2 className="main-heading text-4xl ">Our Support Team <br/>will Always Assist You 24/7</h2>
                 </div>
             </div>
