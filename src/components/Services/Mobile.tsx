@@ -157,7 +157,7 @@ const MobileDevelopment: React.FC = () => {
                         <div className="right-about-v4">
                             <div className="ot-heading">
                                 <span className="text-gray-500"> about company</span>
-                                <h2 className="text-2xl font-bold mb-4">Your Partner for <br />Software Innovation</h2>
+                                <h2 className="text-4xl font-bold mb-4">Your Partner for <br />Software Innovation</h2>
                             </div>
                             <div className="mb-5"></div>
                             <p>Engitech is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.</p>
@@ -183,7 +183,7 @@ const MobileDevelopment: React.FC = () => {
             <div className="w-full md:w-5/12">
                 <div className="ot-heading mb-0">
                     <span className="text-gray-500"> latest case studies</span>
-                    <h2 className="text-2xl font-bold">Introduce Our Projects</h2>
+                    <h2 className="text-4xl font-bold">Introduce Our Projects</h2>
                 </div>
             </div>
             <div className="w-full md:w-7/12 self-end">

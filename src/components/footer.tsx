@@ -1,121 +1,63 @@
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faGlobe, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 // import logo from "../public/images/logo-light.svg"
-import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+
 const Footer = () => {
   return (
-    <footer id="site-footer" className="site-footer footer-v1 block">
-    <div className="container px-[15px] mx-auto">
-      <div className="flex flex-wrap mx-[-15px]">
-        <div className="sm:w-1/2 md:w-1/2 lg:w-1/4 w-full
-">
-          <div className="widget-footer">
-            <h5 className="text-white">Services</h5>
-            <ul className="list-items">
-              <li className="list-item">
-                <a href="web-development.html">Web Development</a>
-              </li>
-              <li className="list-item">
-                <a href="mobile-development.html">Mobile Development</a>
-              </li>
-              <li className="list-item">
-                <a href="it-services.html">On-Demand Apps</a>
-              </li>
-              <li className="list-item">
-                <a href="our-team.html">Dedicated Team</a>
-              </li>
-              <li className="list-item">
-                <a href="it-services.html">iOS &amp; Android</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="sm:w-1/2 md:w-1/2 lg:w-1/4 w-full
-">
-          <div className="widget-footer">
-            <h5 className="text-white">Learn</h5>
-            <ul className="list-items">
-              <li className="list-item">
-                <a href="it-services.html">Social Media Platform</a>
-              </li>
-              <li className="list-item">
-                <a href="it-services.html">Business Management Tools</a>
-              </li>
-              <li className="list-item">
-                <a href="it-services.html">Gambling &amp; Betting Web Apps</a>
-              </li>
-              <li className="list-item">
-                <a href="it-services.html">Sports and Fitness App</a>
-              </li>
-              <li className="list-item">
-                <a href="it-services.html">Software as a Service (SaaS)</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="sm:w-1/2 md:w-1/2 lg:w-1/4 w-full
-">
-          <div className="widget-footer">
-            <h5 className="text-white">Company</h5>
-            <ul className="list-items">
-              <li className="list-item">
-                <a href="about-us.html">About Company</a>
-              </li>
-              <li className="list-item">
-                <a href="faq.html">For Customers</a>
-              </li>
-              <li className="list-item">
-                <a href="blog.html">Blog &amp; News</a>
-              </li>
-              <li className="list-item">
-                <a href="contact.html">Careers &amp; Reviews</a>
-              </li>
-              <li className="list-item">
-                <a href="contact.html">Sitemap</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="sm:w-1/2 md:w-1/2 lg:w-1/4 w-full
-">
-          <div className="widget-footer">
-            <h5 className="text-white">Subscribe</h5>
-            <p>Follow our newsletter to stay updated about agency.</p>
-            <form
-              id="mc4wp-form-1"
-              className="mc4wp-form mc4wp-form-1343"
-              method="post"
-              action="newsletter.php"
-            >
-              <div className="mc4wp-form-fields">
-                <div className="subscribe-inner-form">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                  <button type="submit" className="subscribe-btn-icon">
-                  <FontAwesomeIcon icon={faPaperPlane} />
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-wrap mt-[65px]">
-        <div className="md:w-1/2 mb-4 md:mb-0">
-        <Image src="/images/logo-light.svg" alt="Engitech" width={140} height={40} />
-        </div>
-        <div className="md:text-right self-center">
-          <p className="copyright-text">
-            Copyright © 2020 Engitech by ThemeModern. All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <footer id="site-footer" className="bg-[#211E3B] text-white py-10">
+    <div className="container mx-auto pt-10">
+       <div className="flex justify-center">
+           <img src="../images/logo-light.png" alt="" className="mb-6"/>
+       </div>
+       <div className="space-y-10">
+           <div className="flex flex-wrap justify-center">
+               <div className="w-full md:w-1/3 p-4">
+                   <div className="bg-[#211E3B] p-6 text-center">
+                       <div className="text-3xl mb-4"><FontAwesomeIcon  icon={faGlobe} style={{color: "#43baff",}} /></div>
+                       <p className="text-lg">411 University St, Seattle, USA</p>
+                       <h6 className="font-normal mt-2 text-sm text-gray-400">Our Address</h6>
+                   </div>
+               </div>
+               <div className="w-full md:w-1/3 p-4">
+                   <div className="bg-[#211E3B] p-6 text-center">
+                       <div className="text-3xl mb-4"><FontAwesomeIcon icon={faEnvelope} style={{color: "#43baff",}} /></div>
+                       <p className="text-lg">contact@mail.net</p>
+                       <h6 className="font-normal mt-2  text-sm text-gray-400">Our Mailbox</h6>
+                   </div>
+               </div>
+               <div className="w-full md:w-1/3 p-4">
+                   <div className="bg-[#211E3B] p-6 text-center">
+                       <div className="text-3xl mb-4"><FontAwesomeIcon icon={faPhone} style={{color: "#43baff",}} /></div>
+                       <p className="text-lg">+1 -800-456-478-23</p>
+                       <h6 className="font-normal mt-2  text-sm text-gray-400">Our Phone</h6>
+                   </div>
+               </div>
+           </div>
+           <div className="space-y-6">
+               <div className="flex justify-center">
+                   <div className="footer-menu">
+                       <ul className="flex space-x-13">
+                           <li><a href="index.html" className="hover:underline">Home</a></li>
+                           <li><a href="services.html" className="hover:underline">Services</a></li>
+                           <li><a href="portfolio.html" className="hover:underline">Portfolio</a></li>
+                           <li><a href="blog.html" className="hover:underline">Blog</a></li>
+                           <li><a href="contact.html" className="hover:underline">Contacts</a></li>
+                       </ul>
+                   </div>
+               </div>
+               <p className="text-center text-normal text-gray-400 text-base">Copyright © 2020 Engitech by ThemeModern. All Rights Reserved.</p>
+               <div className="flex justify-center space-x-4 mt-4">
+                   <a className="text-blue-400 hover:text-blue-300" href="twitter.html"><FontAwesomeIcon icon={faTwitter} /></a>
+                   <a className="text-blue-400 hover:text-blue-300" href="facebook.html"><FontAwesomeIcon icon={faFacebook} /></a>
+                   <a className="text-blue-400 hover:text-blue-300" href="linkedin.html"><FontAwesomeIcon icon={faLinkedin} /></a>
+                   <a className="text-blue-400 hover:text-blue-300" href="instagram.html"><FontAwesomeIcon icon={faInstagram} /></a>
+               </div>
+           </div>
+       </div>
+   </div>
+</footer>
   )
 }
 

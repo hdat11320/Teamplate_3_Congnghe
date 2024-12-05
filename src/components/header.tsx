@@ -18,9 +18,9 @@ export default function Header() {
 
         <header id='site-header' className="site-header sticky top-0 z-50">
             <BackToTopButton />
-            <div className="header-topbar">
-                <div className="octf-area-wrap mx-auto flex justify-between items-center">
-                    <div className=" w-full px-[15px] mx-10">
+            <div className="header-topbar ">
+                <div className="octf-area-wrap mx-auto flex justify-between items-center ">
+                    <div className=" w-full px-[15px] mx-10 ">
                         <div className="flex justify-between items-center">
                             {/* Phần bên trái: Số điện thoại và Email */}
                             <div className="flex items-center space-x-6">

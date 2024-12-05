@@ -23,12 +23,12 @@ const ITServices = () => {
         <div className="container mx-auto">
           <div className="flex flex-col sm:flex-row justify-between mb-12">
             <div className="mb-4 sm:mb-0">
-              <h2 className="text-4xl font-bold ">
+              <h2 className="text-4xl  ">
                 We Offer a Wide <br /> Variety of IT Services
               </h2>
             </div>
             <div className="text-right">
-              <a href="#" className="bg-sky-400 hover:bg-purple-500 hover:text-white text-white text-sm font-bold py-4 px-8 rounded-none transition duration-300 ease-in-out">
+              <a href="#" className="bg-sky-400 hover:bg-purple-500 hover:text-white text-white text-sm font-bold py-4 px-7 rounded-none transition duration-300 ease-in-out">
                 ALL SERVICES
               </a>
             </div>
