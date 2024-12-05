@@ -1,11 +1,10 @@
 "use client";
 import "../../public/css/style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import logo from "../public/images/logo.svg"
 import { faTwitter, faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {  faEnvelope, faSearch, faShoppingBag, faClock, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-// import { useState } from "react";git 
+import { useState } from "react";
 import Link from 'next/link';
 import BackToTopButton from "./backtotop";
 
