@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faLinkedin, faPinterest, faPinterestP, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin,  faPinterestP, faTwitter } from '@fortawesome/free-brands-svg-icons';
 const LeadershipTeam = () => {
   return (
     <div className="bg-white py-16 px-4">
