@@ -27,23 +27,23 @@ const ProductCard: React.FC<ProductProps> = ({ image, title, price, sale, star }
         </span>
       )}
 
-      <div className="relative">
-        {/* Hình ảnh sản phẩm */}
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-48 object-cover rounded-md mb-4" 
-        />
+<div className="relative">
+  {/* Hình ảnh sản phẩm */}
+  <img 
+    src={image} 
+    alt={title} 
+    className="w-full h-48 object-cover rounded-md mb-4" 
+  />
 
-        {/* Nút Add to Cart xuất hiện khi hover */}
-        {isHovered && (
-          <button 
-            className="absolute w-full h-1/3 bottom-2 bg-purple-800 text-white opacity-90 flex justify-center items-center text-lg font-semibold"
-          >
-            Add to Cart
-          </button>
-        )}
-      </div>
+  {/* Nút Add to Cart xuất hiện khi hover */}
+  {isHovered && (
+    <button 
+      className="absolute w-full h-1/3 bottom-2 bg-purple-800 text-white opacity-0 transition-opacity duration-700 ease-in-out transform translate-y-4 hover:opacity-90 hover:translate-y-0 flex justify-center items-center text-lg font-semibold"
+    >
+      Add to Cart
+    </button>
+  )}
+</div>
 
       {/* Tên sản phẩm */}
       <h2 className="text-lg font-bold">{title}</h2>

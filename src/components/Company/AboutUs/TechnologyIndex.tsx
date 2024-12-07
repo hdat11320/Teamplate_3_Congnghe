@@ -6,8 +6,8 @@ const TechnologyIndex = () => {
       {/* Left Side - Textual Content */}
       <div className="w-full md:w-1/2 mb-8 md:mb-0">
       <h5 className="text-purple-600 font-bold text-sm">  TECHNOLOGY INDEX</h5>
-        <h3 className="text-4.5xl mb-4 font-extrabold">Improve and Innovate with the Tech Trends</h3>
-        <p className="text-lg text-gray-500 mb-6 ">
+        <h3 className="text-4xl mb-4 font-extrabold">Improve and Innovate with the Tech Trends</h3>
+        <p className="text-bg text-gray-500 mb-6 ">
         We hire and build your own remote dedicated development teams tailored to your specific needs.
         </p>
 

@@ -1,4 +1,4 @@
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faKeyboard, faLaptopCode, faMobileScreenButton, faNoteSticky, faPhotoFilm, faPlay, faWindowRestore } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
@@ -35,7 +35,7 @@ const MobileDevelopment: React.FC = () => {
 
       <section className="mobile-app py-16">
         <div className="container mx-auto">
-          <div className="row text-center">
+          <div className="row text-center pb-12">
             <div className="col-md-12">
               <div className="ot-heading mb-10">
                 <span className="text-gray-500">business benefits</span>
@@ -44,19 +44,26 @@ const MobileDevelopment: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-wrap">
-            <div className="w-full lg:w-1/3 mb-8">
+            <div className="w-full lg:w-1/3 mb-8 ">
               <div className="icon-box-s2 s3 app-benefits-left mb-10">
                 <div className="icon-main">
                   <span className="flaticon-laptop text-5xl"></span>
+                  <div className="relative z-10">
+                  <FontAwesomeIcon icon={faLaptopCode} className="text-5xl" />
+</div>
+
                 </div>
                 <div className="content-box">
                   <h5 className="text-xl font-semibold">Software as a Service</h5>
                   <p>51% of smartphone users have discovered a new company or product.</p>
                 </div>
               </div>
-              <div className="icon-box-s2 s3 app-benefits-left mb-10">
+              <div className="icon-box-s2 s3 app-benefits-left mb-10 pr-12">
                 <div className="icon-main">
                   <span className="flaticon-seo-and-web text-5xl"></span>
+                  <div className="relative z-10">
+                  <FontAwesomeIcon icon={faMobileScreenButton}  className="text-5xl"  />
+</div>
                 </div>
                 <div className="content-box">
                   <h5 className="text-xl font-semibold">Internet of Things</h5>
@@ -66,6 +73,9 @@ const MobileDevelopment: React.FC = () => {
               <div className="icon-box-s2 s3 app-benefits-left">
                 <div className="icon-main">
                   <span className="flaticon-process text-5xl"></span>
+                  <div className="relative z-10">
+                  <FontAwesomeIcon icon={faKeyboard}  className="text-5xl"  />
+</div>
                 </div>
                 <div className="content-box">
                   <h5 className="text-xl font-semibold">Gambling &amp; Betting</h5>
@@ -76,7 +86,7 @@ const MobileDevelopment: React.FC = () => {
 
             <div className="w-full lg:w-1/3 mb-8 flex justify-center ">
               <div className="app-benefits-img ">
-                <img src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Tech/engitech/images/app-watch-1.jpg" alt="App Watch" className=" rounded-lg shadow-lg" />
+                <img src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Tech/engitech/images/app-watch-1.jpg" alt="App Watch" className=" rounded-lg" />
               </div>
             </div>
 
@@ -84,24 +94,36 @@ const MobileDevelopment: React.FC = () => {
               <div className="icon-box-s2 s1 app-benefits-right mb-10">
                 <div className="icon-main">
                   <span className="flaticon-data-1 text-5xl"></span>
+                  <div className="relative z-10">
+
+                  <FontAwesomeIcon icon={faPhotoFilm} className="text-5xl" />
+                  </div>
                 </div>
                 <div className="content-box">
                   <h5 className="text-xl font-semibold">Social Media</h5>
                   <p>80% of time users spend in social media from their mobile devices.</p>
                 </div>
               </div>
-              <div className="icon-box-s2 s1 app-benefits-right mb-10">
+              <div className="icon-box-s2 s1 app-benefits-right mb-15  pl-12">
                 <div className="icon-main">
                   <span className="flaticon-code-2 text-5xl"></span>
+                  <div className="relative z-10">
+
+                  <FontAwesomeIcon icon={faWindowRestore} className="text-5xl " />
+                  </div>
                 </div>
                 <div className="content-box">
                   <h5 className="text-xl font-semibold">Business Management</h5>
                   <p>65% of sales representatives have achieved their quotas by adopting.</p>
                 </div>
               </div>
-              <div className="icon-box-s2 s1 app-benefits-right">
+              <div className="icon-box-s2 s1 app-benefits-right pt-5">
                 <div className="icon-main">
                   <span className="flaticon-report text-5xl"></span>
+                  <div className="relative z-10">
+
+                  <FontAwesomeIcon icon={faNoteSticky}  className="text-5xl"/>
+                  </div>
                 </div>
                 <div className="content-box">
                   <h5 className="text-xl font-semibold">Trading Systems</h5>

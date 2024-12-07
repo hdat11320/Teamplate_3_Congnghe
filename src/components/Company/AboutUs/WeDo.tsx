@@ -26,22 +26,22 @@ const WhatWeDo = () => {
             {/* Icon Boxes */}
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 bg-gray-700  flex items-center justify-center">
-                <img src="" alt="Icon 1" />
+                <img src="/images/php.jpg" alt="Icon 1" />
               </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 bg-gray-700  flex items-center justify-center">
-                <img src="" alt="Icon 2" />
+                <img src="/images/sv.jpg" alt="Icon 2" />
               </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 bg-gray-700  flex items-center justify-center">
-                <img src="" alt="Icon 3" />
+                <img src="/images/js.jpg" alt="Icon 3" />
               </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-12 h-12 bg-gray-700  flex items-center justify-center">
-                <img src="/" alt="Icon 4" />
+                <img src="/images/css.jpg" alt="Icon 4" />
               </div>
             </div>
           </div>

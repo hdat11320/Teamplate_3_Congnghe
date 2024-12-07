@@ -1,4 +1,5 @@
 import Banner from "@/components/Company/AboutUs/banner";
+import Client from "@/components/Company/AboutUs/client";
 import LeadershipTeam from "@/components/Company/AboutUs/LeaderShipTeam";
 import WhatWeOffer from "@/components/Company/AboutUs/Offer";
 import TechnologyIndex from "@/components/Company/AboutUs/TechnologyIndex";
@@ -12,6 +13,7 @@ export default function Home(){
         <Header/>
         <Banner/>
         <WhatWeOffer/>
+        <Client></Client>
         <WhatWeDo/>
         <LeadershipTeam/>
         <TechnologyIndex/>

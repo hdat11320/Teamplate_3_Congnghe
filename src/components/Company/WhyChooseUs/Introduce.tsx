@@ -27,15 +27,15 @@ const Introduce: React.FC = () => {
 
     return (
         <div className="relative footer-v2">
-            <h5 className="text-purple-700 text-sm font-semibold mb-4 mx-auto container">LASTEST CASE STUDIES</h5>
+            <h5 className="text-[#8E88B8] text-sm font-semibold mb-2 mx-auto container">LASTEST CASE STUDIES</h5>
             {/* Title Section */}
             <div className="container flex justify-between items-center mb-4 py-6 mx-auto">
                 <div>
                     <h1 className="text-4xl font-bold text-white">Introduce Our Projects</h1>
                 </div>
                 <div>
-                    <span className="mt-2 w-50 text-gray-600">We are excelled in a wide range of industries</span>
-                    <p className="mt-2 w-50 text-gray-600">bringing valuable insights to our customers.</p>
+                    <span className="mt-2 w-50 text-[#8E88B8]">We are excelled in a wide range of industries</span>
+                    <p className="mt-2 w-50 text-[#8E88B8]">bringing valuable insights to our customers.</p>
                 </div>
                 <a href="#" className="text-blue-500 hover:underline">
                     <span>→</span> VIEW ALL PROJECTS
@@ -51,14 +51,14 @@ const Introduce: React.FC = () => {
                     }}
                 >
                     {/* Hình ảnh 1 */}
-                    <div className="relative w-full md:w-1/4 flex-shrink-0 mx-2">
+                    <div className="relative w-full md:w-1/5 flex-shrink-0 mx-4">
                         <img
                             src="/images/projects/project8-720x520.jpg"
                             alt="Basic Project"
                             className="w-full h-full object-cover hover:opacity-2 transition-opacity duration-300"
                         />
                         <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-5/6 bg-[#262051] text-white p-2">
-                            <h3 className="text-lg font-bold text-white">Basic Project</h3>
+                            <h3 className="text-2xl font-bold text-white">Basic Project</h3>
                             <p className="text-sm text-white">DESIGN / DEVELOPMENT</p>
                             <div className="absolute top-0 right-0 w-1/4 h-3/4 bg-gray-400 hover:bg-blue-500 transition-colors duration-300 rounded-br-none rounded-bl-full flex items-center justify-center">
                                 <a href="#" className="text-white left-10 bottom-10 text-3xl">→</a>
@@ -74,7 +74,7 @@ const Introduce: React.FC = () => {
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-5/6 bg-[#262051] text-white p-2">
-                            <h3 className="text-lg font-bold text-white">Social Media App</h3>
+                            <h3 className="text-2xl font-bold text-white">Social Media App</h3>
                             <p className="text-sm text-white">DESIGN / TECHNOLOGY</p>
                             <div className="absolute top-0 right-0 w-1/4 h-3/4 bg-gray-400 hover:bg-blue-500 transition-colors duration-300 rounded-br-none rounded-bl-full flex items-center justify-center">
                                 <a href="#" className="text-white left-10 bottom-10 text-3xl">→</a>
@@ -90,7 +90,7 @@ const Introduce: React.FC = () => {
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-5/6 bg-[#262051] text-white p-2">
-                            <h3 className="text-lg font-bold text-white">App for Virtual Reality</h3>
+                            <h3 className="text-2xl font-bold text-white">App for Virtual Reality</h3>
                             <p className="text-sm text-white">DESIGN / IDEAS</p>
                             <div className="absolute top-0 right-0 w-1/4 h-3/4 bg-gray-400 hover:bg-blue-500 transition-colors duration-300 rounded-br-none rounded-bl-full flex items-center justify-center">
                                 <a href="#" className="text-white left-10 bottom-10 text-3xl">→</a>
@@ -106,7 +106,7 @@ const Introduce: React.FC = () => {
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-5/6 bg-[#262051] text-white p-2">
-                            <h3 className="text-lg font-bold text-white">E-Commerce Platform</h3>
+                            <h3 className="text-2xl font-bold text-white">E-Commerce Platform</h3>
                             <p className="text-sm text-white">DESIGN / E-COMMERCE</p>
                             <div className="absolute top-0 right-0 w-1/4 h-3/4 bg-gray-400 hover:bg-blue-500 transition-colors duration-300 rounded-br-none rounded-bl-full flex items-center justify-center">
                                 <a href="#" className="text-white left-10 bottom-10 text-3xl">→</a>
@@ -122,7 +122,7 @@ const Introduce: React.FC = () => {
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 w-5/6 bg-[#262051] text-white p-2">
-                            <h3 className="text-lg font-bold text-white">AI Assistant</h3>
+                            <h3 className="text-2xl font-bold text-white">AI Assistant</h3>
                             <p className="text-sm text-white">DESIGN / INNOVATION</p>
                             <div className="absolute top-0 right-0 w-1/4 h-3/4 bg-gray-400 hover:bg-blue-500 transition-colors duration-300 rounded-br-none rounded-bl-full flex items-center justify-center">
                                 <a href="#" className="text-white left-10 bottom-10 text-3xl">→</a>

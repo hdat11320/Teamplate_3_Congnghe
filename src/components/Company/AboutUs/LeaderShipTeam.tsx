@@ -2,6 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faLinkedin, faPinterest, faPinterestP, faTwitter } from '@fortawesome/free-brands-svg-icons';
 const LeadershipTeam = () => {
   return (
     <div className="bg-white py-16 px-4">
@@ -22,16 +23,19 @@ const LeadershipTeam = () => {
       alt="David Ferry"
       className="rounded-lg shadow-lg w-full h-auto"
     />
-      <div className="absolute inset-0 flex justify-center items-center ">
-      <div className="flex space-x-4 bg-purple-500 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-linkedin.svg" alt="LinkedIn" className="w-6 h-6"/>
+      <div className="absolute inset-0 flex justify-center  items-center ">
+      <div className="flex space-x-4 bg-[#211E3B]  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <a href="#" className="h-10 mt-2 ml-3 text-gray-400 hover:text-bule-400">
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-twitter.svg" alt="Twitter" className="w-6 h-6"/>
+        <a href="#" className=" h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-pinterest.svg" alt="Pinterest" className="w-6 h-6"/>
+        <a href="#" className="h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faPinterestP} />
+        </a>
+        <a href="#" className="h-10 mt-2  mr-2 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
     </div>
@@ -47,15 +51,18 @@ const LeadershipTeam = () => {
       className="rounded-lg shadow-lg w-full h-auto"
     />
     <div className="absolute inset-0 flex justify-center items-center">
-      <div className="flex space-x-4  bg-purple-500 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-linkedin.svg" alt="LinkedIn" className="w-6 h-6"/>
+    <div className="flex space-x-4 bg-[#211E3B]  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <a href="#" className="h-10 mt-2 ml-3 text-gray-400 hover:text-bule-400">
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-twitter.svg" alt="Twitter" className="w-6 h-6"/>
+        <a href="#" className=" h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-pinterest.svg" alt="Pinterest" className="w-6 h-6"/>
+        <a href="#" className="h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faPinterestP} />
+        </a>
+        <a href="#" className="h-10 mt-2  mr-2 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
     </div>
@@ -71,15 +78,18 @@ const LeadershipTeam = () => {
       className="rounded-lg shadow-lg w-full h-auto"
     />
     <div className="absolute inset-0 flex justify-center items-center">
-      <div className="flex space-x-4  bg-purple-500 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-linkedin.svg" alt="LinkedIn" className="w-6 h-6"/>
+    <div className="flex space-x-4 bg-[#211E3B]  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <a href="#" className="h-10 mt-2 ml-3 text-gray-400 hover:text-bule-400">
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-twitter.svg" alt="Twitter" className="w-6 h-6"/>
+        <a href="#" className=" h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-pinterest.svg" alt="Pinterest" className="w-6 h-6"/>
+        <a href="#" className="h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faPinterestP} />
+        </a>
+        <a href="#" className="h-10 mt-2  mr-2 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
     </div>
@@ -95,15 +105,18 @@ const LeadershipTeam = () => {
       className="rounded-lg shadow-lg w-full h-auto"
     />
     <div className="absolute inset-0 flex justify-center items-center">
-      <div className="flex space-x-4  bg-purple-500 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-linkedin.svg" alt="LinkedIn" className="w-6 h-6"/>
+    <div className="flex space-x-4 bg-[#211E3B]  opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <a href="#" className="h-10 mt-2 ml-3 text-gray-400 hover:text-bule-400">
+          <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-twitter.svg" alt="Twitter" className="w-6 h-6"/>
+        <a href="#" className=" h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
-          <img src="/path-to-pinterest.svg" alt="Pinterest" className="w-6 h-6"/>
+        <a href="#" className="h-10 mt-2 ml-4 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faPinterestP} />
+        </a>
+        <a href="#" className="h-10 mt-2  mr-2 text-gray-400 hover:text-bule-200">
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
     </div>
@@ -113,8 +126,8 @@ const LeadershipTeam = () => {
 </div>
 
         {/* Statistics Section */}
-        <div className="bg-gradient-to-r from-cyan-500 to-purple-800 py-12 ">
-  <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white my-16">
+        <div className="bg-gradient-to-r from-cyan-400 to-purple-700 py-6 ">
+  <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white my-14">
     <div className="leading-tight">
       <span className="text-5xl font-bold text-white">330+</span>
       <span className="flex items-center justify-center uppercase font-bold">

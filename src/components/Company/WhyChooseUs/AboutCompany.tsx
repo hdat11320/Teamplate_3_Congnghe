@@ -57,7 +57,7 @@ export default function AboutCompany() {
         </div>
 
         {/* Bottom Section: Stats */}
-  <div className="bg-gradient-to-r from-cyan-500 to-purple-800 py-12 ">
+  <div className="bg-gradient-to-r from-cyan-400 to-purple-700 py-6  ">
   <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white my-16">
     <div className="leading-tight">
       <span className="text-5xl font-bold text-white">330+</span>
