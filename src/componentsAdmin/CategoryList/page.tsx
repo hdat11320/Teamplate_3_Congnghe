@@ -21,9 +21,9 @@ const CategoryList = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const data = await getCategories();
+        const data: Category[] = await getCategories(); // Đảm bảo kiểu trả về
         setCategories(data);
-      } catch (error: any) {
+      } catch (error) {
         setError('Có lỗi xảy ra khi lấy danh mục');
         console.error('Lỗi khi lấy danh mục:', error);
       }
@@ -37,7 +37,7 @@ const CategoryList = () => {
     if (!newCategoryName) return; // Kiểm tra nếu không có tên danh mục
 
     try {
-      const newCategory = await createCategory({ name: newCategoryName });
+      const newCategory: Category = await createCategory({ name: newCategoryName });
       setCategories([...categories, newCategory]);
       setNewCategoryName(''); // Reset input
     } catch (error) {
@@ -51,7 +51,7 @@ const CategoryList = () => {
     if (!editCategory?.name) return;
 
     try {
-      const updatedCategory = await updateCategory(editCategory.id, { name: editCategory.name });
+      const updatedCategory: Category = await updateCategory(editCategory.id, { name: editCategory.name });
       setCategories(categories.map((category) => 
         category.id === updatedCategory.id ? updatedCategory : category
       ));

@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { getProducts } from '../../services/product';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 // Định nghĩa interface cho sản phẩm
 interface Product {
@@ -12,6 +10,11 @@ interface Product {
   price: number;
   thumbnail?: string; // Có thể không có
   sale?: boolean; // Có thể không có
+}
+
+// Định nghĩa interface cho dữ liệu trả về từ API
+interface ProductResponse {
+  data: Product[];
 }
 
 const ProductList = () => {
@@ -23,9 +26,9 @@ const ProductList = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const data = await getProducts();
+        const data: ProductResponse = await getProducts(); // Đảm bảo kiểu trả về
         setProducts(data.data); // Gán danh sách sản phẩm vào state
-      } catch (error: any) {
+      } catch (error) {
         setError('Không thể tải danh sách sản phẩm');
         console.error('Lỗi khi tải danh sách sản phẩm:', error);
       } finally {
