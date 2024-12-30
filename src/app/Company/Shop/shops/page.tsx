@@ -4,9 +4,9 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Banner from "@/components/shops/banner";
 import Pagination from "@/components/shops/Pagination";
-import ProductGrid from "@/components/shops/ProductGrid";
 import SearchAndFilter from "@/components/shops/SearchAndFilter";
 import Sidebar from "@/components/shops/SideBar";
+import ProductList from "@/componentsAdmin/Product/page";
 
 
 
@@ -20,7 +20,7 @@ export default function Shop() {
     <div className=" flex">
       <Sidebar />
       <div className="flex-1 p-8">
-        <ProductGrid />
+        <ProductList/>
         <Pagination />
       </div>
     </div>

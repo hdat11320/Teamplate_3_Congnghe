@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 
 import Home1 from "@/components/Home/home";
 
-import { faBagShopping, faPhoneFlip, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping, faPhoneFlip, faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Image from "next/image";
@@ -172,6 +172,16 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <div className="h-16"></div>
+                                    <div className="relative">
+                                                                            <a href="/Login" className="relative text-gray-600 hover:text-gray-800">
+                                                                            <FontAwesomeIcon icon={faUser} className="text-xl" />
+                                                                                {/* <span className="absolute -top-2 -right-2 bg-sky-400 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                                                                                    0
+                                                                                </span> */}
+                                                                            </a>
+                                                                            
+                                                                        </div>
+                                                                        <div className="h-16"></div>
                                     {/* Tìm kiếm */}
                                     <div className="relative">
                                         <button className="text-gray-600 hover:text-gray-800">
@@ -207,7 +217,7 @@ export default function Home() {
                                     {/* Nút Free Quote */}
                                     <a
                                         href="#"
-                                        className=" uppercase bg-sky-400 text-white font-bold px-7 py-3 hover:bg-purple-500 hover:text-white"
+                                        className=" uppercase bg-sky-400 text-white font-bold px-5 py-3 hover:bg-purple-500 hover:text-white"
                                     >
                                         Free Quote
                                     </a>

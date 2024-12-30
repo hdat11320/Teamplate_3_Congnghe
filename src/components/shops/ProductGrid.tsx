@@ -1,7 +1,18 @@
 // components/ProductGrid.tsx
 
 import ProductCard from "./ProductCard";
-
+// constructor(){
+//   super();
+//   this.productApi = `http://api-core.dsp.one/product/docs`;
+// }
+// getProducts -async () => {
+//   const response =await fetch(this.productApi);
+//   if (response.ok) {
+//     const data = await response.json();
+//     console.log();
+    
+//   }
+// }
 interface Product {
   image: string;
   title: string;
@@ -24,6 +35,8 @@ const products: Product[] = [
   { image: '/images/product/product-3.jpg', title: 'T-Shirt with Logo', price: '$19.99', sale: false, star: false  },
   { image: '/images/product/product-4.jpg', title: 'Hoodie with Logo', price: '$39.99', sale: true, star: false  },
 ];
+  
+  
 
 const ProductGrid: React.FC = () => {
   return (

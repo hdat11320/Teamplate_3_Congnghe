@@ -2,7 +2,7 @@
 import "../../public/css/style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import {  faEnvelope, faSearch, faShoppingBag, faClock, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
+import {  faEnvelope, faSearch, faShoppingBag, faClock, faPhoneFlip, faUser } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
 import Link from 'next/link';
@@ -137,7 +137,7 @@ export default function Header() {
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children">
-                                                <a href="#">Services</a>
+                                                <a href="/Services/Mobile-Development">Services</a>
                                                 <ul className="sub-menu">
                                                     <li>
                                                         <a href="/Services/It-Service">It Services</a>
@@ -213,7 +213,7 @@ export default function Header() {
                                     {/* Giỏ hàng */}
                                     <div className="h-16"></div>
                                     <div className="relative">
-                                        <a href="cart-page.html" className="relative text-gray-600 hover:text-gray-800">
+                                        <a href="/Cart" className="relative text-gray-600 hover:text-gray-800">
                                             <FontAwesomeIcon icon={faShoppingBag} className="text-xl" />
                                             <span className="absolute -top-2 -right-2 bg-sky-400 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                                                 0
@@ -225,6 +225,16 @@ export default function Header() {
                                     </div>
                                     <div className="h-16"></div>
                                     {/* Tìm kiếm */}
+                                    <div className="relative">
+                                        <a href="/Login" className="relative text-gray-600 hover:text-gray-800">
+                                        <FontAwesomeIcon icon={faUser} className="text-xl" />
+                                            {/* <span className="absolute -top-2 -right-2 bg-sky-400 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                                                0
+                                            </span> */}
+                                        </a>
+                                        
+                                    </div>
+                                    <div className="h-16"></div>
                                     <div className="relative">
                                         <button className="text-gray-600 hover:text-gray-800">
                                             <FontAwesomeIcon icon={faSearch} className="text-xl" />
@@ -255,11 +265,11 @@ export default function Header() {
                                             </a></p>
                                         </div>
                                     </div>
-                                    <div className="h-16"></div>
+                                   
                                     {/* Nút Free Quote */}
                                     <a
                                         href="#"
-                                        className=" uppercase bg-sky-400 text-white font-bold px-7 py-3 hover:bg-purple-500 hover:text-white"
+                                        className="text-sm uppercase bg-sky-400 text-white font-bold px-7 py-4 hover:bg-purple-500 hover:text-white"
                                     >
                                         Free Quote
                                     </a>
