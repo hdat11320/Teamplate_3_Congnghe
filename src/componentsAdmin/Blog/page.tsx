@@ -1,9 +1,16 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react';
 import { getPosts } from '../../services/blog'; // Đảm bảo import đúng từ file chứa hàm getPosts
 
+// Định nghĩa interface cho bài viết
+interface Post {
+  id: number; // Hoặc string, tùy thuộc vào kiểu dữ liệu của ID
+  title: string;
+  excerpt: string;
+}
+
 const Blog = () => {
-  const [posts, setPosts] = useState<any[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]); // Sử dụng kiểu Post[]
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -28,7 +35,7 @@ const Blog = () => {
       {/* Kiểm tra dữ liệu và hiển thị */}
       {Array.isArray(posts) && posts.length > 0 ? (
         <ul>
-          {posts.map((post: any) => (
+          {posts.map((post) => (
             <li key={post.id}>
               <h2>{post.title}</h2>
               <p>{post.excerpt}</p>

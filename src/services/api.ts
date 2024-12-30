@@ -2,7 +2,7 @@ const API_BASE_URL = '/api';
 
 interface FetchOptions {
   method?: 'GET' | 'POST' | 'PUT' | 'DELETE';
-  body?: any;
+  body?: Record<string, unknown>; // Sử dụng Record để mô tả đối tượng
   headers?: Record<string, string>;
 }
 

@@ -6,9 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { getProductById } from '@/services/product';
 
+// Định nghĩa interface cho sản phẩm
+interface Product {
+  id: string; // Hoặc number, tùy thuộc vào kiểu dữ liệu của ID
+  name: string;
+  description: string;
+  price: number;
+}
+
 const ProductDetail = () => {
   const { id } = useParams() as { id: string }; // Lấy `id` từ URL
-  const [product, setProduct] = useState<any>(null);
+  const [product, setProduct] = useState<Product | null>(null); // Sử dụng kiểu Product
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 

@@ -1,12 +1,21 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react';
 import { getCategories, createCategory, updateCategory, deleteCategory } from '../../services/category';
 
+// Định nghĩa interface cho danh mục
+interface Category {
+  id: string; // Hoặc number, tùy thuộc vào kiểu dữ liệu của ID
+  name: string;
+  code: string;
+  lang: string;
+  store_id: string; // Hoặc number nếu cần
+}
+
 const CategoryList = () => {
-  const [categories, setCategories] = useState<any[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]); // Sử dụng kiểu Category[]
   const [error, setError] = useState<string | null>(null);
   const [newCategoryName, setNewCategoryName] = useState<string>(''); // Trạng thái cho việc thêm danh mục
-  const [editCategory, setEditCategory] = useState<any | null>(null); // Trạng thái cho việc sửa danh mục
+  const [editCategory, setEditCategory] = useState<Category | null>(null); // Trạng thái cho việc sửa danh mục
 
   // Lấy danh mục
   useEffect(() => {
@@ -43,11 +52,9 @@ const CategoryList = () => {
 
     try {
       const updatedCategory = await updateCategory(editCategory.id, { name: editCategory.name });
-      setCategories(
-        categories.map((category) =>
-          category.id === updatedCategory.id ? updatedCategory : category
-        )
-      );
+      setCategories(categories.map((category) => 
+        category.id === updatedCategory.id ? updatedCategory : category
+      ));
       setEditCategory(null); // Đóng form sửa
     } catch (error) {
       console.error('Lỗi khi sửa danh mục:', error);
@@ -87,47 +94,46 @@ const CategoryList = () => {
 
       {/* Hiển thị danh sách danh mục */}
       {Array.isArray(categories) && categories.length > 0 ? (
-  <div className="overflow-x-auto">
-    <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
-      <thead>
-        <tr className="bg-gray-100">
-          <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Tên danh mục</th>
-          <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Mã</th>
-          <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Ngôn ngữ</th>
-          <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">ID cửa hàng</th>
-          <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Hành động</th>
-        </tr>
-      </thead>
-      <tbody>
-        {categories.map((category: any) => (
-          <tr key={category.store_id} className="hover:bg-gray-50 transition-colors">
-            <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.name}</td>
-            <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.code}</td>
-            <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.lang}</td>
-            <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.id}</td>
-            <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">
-              <button
-                className="text-red-500 hover:text-red-700 focus:outline-none transition-colors"
-                onClick={() => handleDeleteCategory(category.id)}
-              >
-                Xóa
-              </button>
-              <button
-                className="ml-2 text-blue-500 hover:text-blue-700 focus:outline-none transition-colors"
-                onClick={() => setEditCategory(category)}
-              >
-                Sửa
-              </button>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-) : (
-  <p className="text-gray-500 text-center mt-4">Không có danh mục nào để hiển thị.</p>
-)}
-
+        <div className="overflow-x-auto">
+          <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Tên danh mục</th>
+                <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Mã</th>
+                <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Ngôn ngữ</th>
+                <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">ID cửa hàng</th>
+                <th className="border-t border-b border-gray-200 px-6 py-4 text-left text-sm font-semibold text-gray-600">Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              {categories.map((category) => (
+                <tr key={category.store_id} className="hover:bg-gray-50 transition-colors">
+                  <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.name}</td>
+                  <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.code}</td>
+                  <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.lang}</td>
+                  <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">{category.id}</td>
+                  <td className="border-b border-gray-200 px-6 py-4 text-sm text-gray-700">
+                    <button
+                      className="text-red-500 hover:text-red-700 focus:outline-none transition-colors"
+                      onClick={() => handleDeleteCategory(category.id)}
+                    >
+                      Xóa
+                    </button>
+                    <button
+                      className="ml-2 text-blue-500 hover:text-blue-700 focus:outline-none transition-colors"
+                      onClick={() => setEditCategory(category)}
+                    >
+                      Sửa
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <p className="text-gray-500 text-center mt-4">Không có danh mục nào để hiển thị.</p>
+      )}
 
       {/* Form sửa danh mục */}
       {editCategory && (

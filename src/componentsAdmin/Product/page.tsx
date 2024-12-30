@@ -5,8 +5,17 @@ import { getProducts } from '../../services/product';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
+// Định nghĩa interface cho sản phẩm
+interface Product {
+  id: string; // Hoặc number, tùy thuộc vào kiểu dữ liệu của ID
+  name: string;
+  price: number;
+  thumbnail?: string; // Có thể không có
+  sale?: boolean; // Có thể không có
+}
+
 const ProductList = () => {
-  const [products, setProducts] = useState<any[]>([]);
+  const [products, setProducts] = useState<Product[]>([]); // Sử dụng kiểu Product[]
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -37,7 +46,7 @@ const ProductList = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      {products.slice(0, 9).map((product: any) => (
+      {products.slice(0, 9).map((product) => (
         <div
           key={product.id}
           className="relative text-center p-4 bg-white rounded-lg shadow-md"
@@ -59,19 +68,6 @@ const ProductList = () => {
   
           {/* Tên sản phẩm */}
           <h2 className="text-lg font-bold">{product.name}</h2>
-  
-          {/* Sao đánh giá sản phẩm */}
-          {product.rating && (
-            <div className="text-yellow-500 text-xl">
-              {[...Array(5)].map((_, index) => (
-                <FontAwesomeIcon
-                  key={index}
-                  icon={faStar}
-                  className={index < product.rating ? 'text-yellow-500' : 'text-gray-300'}
-                />
-              ))}
-            </div>
-          )}
   
           {/* Giá sản phẩm */}
           <p className="text-blue-500 mt-2">${product.price.toFixed(2)}</p>
