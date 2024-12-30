@@ -4,8 +4,18 @@ import { getPosts } from '../../../services/blog'; // Giả sử bạn đã tạ
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+// Định nghĩa interface cho bài viết
+interface Post {
+  id: number;
+  title: string;
+  author: string;
+  createdAt: string;
+  commentsCount: number;
+  thumbnail?: string;
+}
+
 const BlogGrid = () => {
-  const [posts, setPosts] = useState<any[]>([]);  // State lưu danh sách bài viết
+  const [posts, setPosts] = useState<Post[]>([]);  // State lưu danh sách bài viết
   const [error, setError] = useState<string | null>(null); // State lưu thông báo lỗi
 
   useEffect(() => {
@@ -46,7 +56,7 @@ const BlogGrid = () => {
                 
                 {/* Render danh sách bài viết */}
                 {posts.length > 0 ? (
-                  posts.slice(0, 6).map((post: any) => (
+                  posts.slice(0, 6).map((post) => (
                     <div key={post.id}>
                       <article className="post-box blog-item bg-white shadow-md rounded-md overflow-hidden">
                         <div className="post-inner">
