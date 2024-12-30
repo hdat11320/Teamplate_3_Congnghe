@@ -2,13 +2,13 @@
 
 import React, { useEffect, useState } from 'react';
 import { getProducts } from '../../services/product';
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+
 const ProductList = () => {
   const [products, setProducts] = useState<any[]>([]);
   const [error, setError] = useState<string | null>(null);
-const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -19,13 +19,21 @@ const [loading, setLoading] = useState<boolean>(true);
       } catch (error: any) {
         setError('Không thể tải danh sách sản phẩm');
         console.error('Lỗi khi tải danh sách sản phẩm:', error);
-      }finally {
+      } finally {
         setLoading(false);
       }
     };
 
     fetchProducts(); // Gọi API khi component được mount
   }, []);
+
+  if (loading) {
+    return <p>Đang tải sản phẩm...</p>; // Hiển thị thông báo đang tải
+  }
+
+  if (error) {
+    return <p style={{ color: 'red' }}>{error}</p>; // Hiển thị thông báo lỗi
+  }
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -71,7 +79,6 @@ const [loading, setLoading] = useState<boolean>(true);
       ))}
     </div>
   );
-  
 };
 
 export default ProductList;

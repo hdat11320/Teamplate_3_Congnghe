@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react';
 import { getPosts } from '../../../services/blog'; // Giả sử bạn đã tạo hàm getPosts để fetch dữ liệu
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,7 +6,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const BlogGrid = () => {
   const [posts, setPosts] = useState<any[]>([]);  // State lưu danh sách bài viết
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null); // State lưu thông báo lỗi
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -14,7 +14,7 @@ const BlogGrid = () => {
         const data = await getPosts();  // Lấy dữ liệu từ API
         setPosts(data);  // Lưu vào state
       } catch (err) {
-        setError('Không thể tải bài viết');
+        setError('Không thể tải bài viết'); // Gán thông báo lỗi
         console.error('Lỗi khi lấy bài viết:', err);
       }
     };
@@ -41,9 +41,12 @@ const BlogGrid = () => {
           <div className="container mx-auto px-4">
             <div className="blog-grid pgrid">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Hiển thị thông báo lỗi nếu có */}
+                {error && <p style={{ color: 'red' }}>{error}</p>}
+                
                 {/* Render danh sách bài viết */}
                 {posts.length > 0 ? (
-                  posts.slice(0,6).map((post: any) => (
+                  posts.slice(0, 6).map((post: any) => (
                     <div key={post.id}>
                       <article className="post-box blog-item bg-white shadow-md rounded-md overflow-hidden">
                         <div className="post-inner">
@@ -59,7 +62,6 @@ const BlogGrid = () => {
                                 alt={post.title}
                                 className="w-full h-auto"
                               />
-
                             </a>
                           </div>
                           <div className="inner-post p-4">
